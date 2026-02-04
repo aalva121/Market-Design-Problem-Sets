@@ -1,9 +1,25 @@
 \documentclass{beamer}
-\usetheme{Madrid}
+\usetheme{Singapore}
+\usecolortheme{orchid}
 
-\title{Designing Markets}
-\subtitle{Chapter 4 Summary}
-\author{Your Name}
+% Modern Purple Color Scheme
+\definecolor{deepPurple}{RGB}{75, 0, 130}
+\definecolor{vibrantPurple}{RGB}{138, 43, 226}
+\definecolor{lightPurple}{RGB}{200, 150, 255}
+
+\setbeamercolor{primary}{bg=deepPurple, fg=white}
+\setbeamercolor{frametitle}{bg=vibrantPurple, fg=white}
+\setbeamercolor{normal text}{fg=deepPurple}
+\setbeamercolor{structure}{fg=vibrantPurple}
+\setbeamercolor{alerted text}{fg=vibrantPurple}
+
+% Fun Modern Font
+\usepackage[sfdefault]{carlito}
+\renewcommand{\familydefault}{\sfdefault}
+
+\title{Applications of Market Design}
+\subtitle{Chapter 4}
+\author{Alyssa Alvarez}
 \date{\today}
 
 \begin{document}
@@ -11,23 +27,160 @@
 \frame{\titlepage}
 
 \begin{frame}{What is Market Design?}
-Market design studies how to construct rules and institutions to achieve desirable outcomes.
-\end{frame}
-
-\begin{frame}{Market Failures}
-\begin{itemize}
-  \item Congestion
-  \item Information asymmetry
-  \item Incentive problems
-\end{itemize}
+\textbf{Goals of market design research:}
+\begin{enumerate}
+  \item Identify institutional sources of inefficiency
+  \item Evaluate alternative market rules
+  \item Propose and implement improved designs
+\end{enumerate}
+\vspace{1cm}
+Market design applies \textit{theoretical} and \textit{empirical} tools to real markets to improve outcomes.
 \end{frame}
 
 \begin{frame}{Diagnosing Market Failures}
-Identifying mismatches between market outcomes and objectives.
+\textbf{Key insight:} Market failures can arise from \textbf{design flaws}, not just market power.
+\vspace{0.5cm}
+\\
+\textbf{Common diagnostic focus:}
+\begin{itemize}
+  \item How information is aggregated
+  \item How agents are allowed to act
+  \item How incentives are shaped by institutional rules
+\end{itemize}
+\vspace{0.5cm}
+\textbf{Diagnosis requires:}
+\begin{itemize}
+  \item Close examination of clearing rules
+  \item Empirical analysis to distinguish causes
+\end{itemize}
 \end{frame}
 
-\begin{frame}{Evaluating Designs}
-Comparing efficiency, fairness, and stability.
+\begin{frame}{Coordination Failures and Centralized Clearing}
+\textbf{Problems with decentralized markets:}
+\begin{itemize}
+  \item Congestion and mismatches
+  \item Market unraveling (early contracting to avoid uncertainty)
+  \item Participants remain unmatched despite gains from trade
+\end{itemize}
+\vspace{0.5cm}
+\textbf{Benefits of centralized clearing:}
+\begin{itemize}
+  \item Aggregates dispersed preference information
+  \item Reduces uncertainty about outcomes
+  \item Improves match quality
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Strategic Behavior and Incentive Problems}
+\textbf{Core challenge:} Poorly designed mechanisms create incentives for \textbf{strategic misrepresentation}.
+\vspace{0.5cm}
+\\
+\textbf{Consequences:}
+\begin{itemize}
+  \item Reduced efficiency
+  \item Harms less informed or sophisticated participants
+\end{itemize}
+\vspace{0.5cm}
+\textbf{Design principle:} Aim for \textbf{strategy-proofness}, where truthful revelation is optimal.
+\vspace{0.5cm}
+\textbf{Behavioral realism:} Mechanisms must account for mistakes, not just theoretical equilibrium.
+\end{frame}
+
+\begin{frame}{Evaluating and Comparing Market Designs}
+\textbf{Central task:} Compare alternative institutional rules
+\vspace{0.5cm}
+\\
+\textbf{Evaluation criteria:}
+\begin{itemize}
+  \item Allocative efficiency
+  \item Distributional outcomes
+  \item Incentive compatibility
+  \item Participation and access
+\end{itemize}
+\vspace{0.5cm}
+\textbf{Methods:}
+\begin{itemize}
+  \item Structural empirical models
+  \item Counterfactual simulations
+  \item Welfare analysis
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Efficiency vs. Fairness Tradeoffs}
+\textbf{Challenge:} Multiple normative objectives often conflict
+\vspace{0.5cm}
+\\
+\textbf{Fairness considerations:}
+\begin{itemize}
+  \item Respecting priority rights
+  \item Avoiding justified envy
+  \item Ensuring equitable access
+\end{itemize}
+\vspace{0.5cm}
+\textbf{Key insight:} Institutional rules encode \textbf{social and political values}, not just efficiency goals.
+\vspace{0.5cm}
+Market design provides a framework for explicitly analyzing these tradeoffs.
+\end{frame}
+
+\begin{frame}{Designing New Market Mechanisms}
+\textbf{When are new designs needed?}
+\begin{itemize}
+  \item Constraints are complex
+  \item Preferences are over bundles
+  \item Transfers are restricted or prohibited
+\end{itemize}
+\vspace{0.5cm}
+\textbf{Requirements for successful mechanisms:}
+\begin{itemize}
+  \item Respect incentive constraints
+  \item Be computationally tractable
+  \item Be understandable and usable by participants
+\end{itemize}
+\vspace{0.5cm}
+\textbf{Examples:} Kidney exchange, course allocation, humanitarian resource allocation
+\end{frame}
+
+\begin{frame}{Complementarity of Theory and Empirics}
+\textbf{Theory:}
+\begin{itemize}
+  \item Identifies feasible allocations
+  \item Clarifies incentive and informational constraints
+\end{itemize}
+\vspace{0.5cm}
+\textbf{Empirics:}
+\begin{itemize}
+  \item Measures welfare impacts
+  \item Tests behavioral assumptions
+  \item Guides policy decisions
+\end{itemize}
+\vspace{0.5cm}
+\textbf{Best practice:} Combine mechanism design theory, structural estimation, and field data.
+\end{frame}
+
+\begin{frame}{Institutional Adoption and Political Economy}
+\textbf{Challenge:} Well-designed mechanisms may not be adopted.
+\vspace{0.5cm}
+\textbf{Sources of resistance:}
+\begin{itemize}
+  \item Incumbent institutions
+  \item Participants who benefit from inefficiencies
+\end{itemize}
+\vspace{0.5cm}
+\textbf{Implications:} Market design intersects with political economy, regulation, and governance.
+\vspace{0.5cm}
+\textbf{Reality:} Government intervention may be necessary to implement socially superior designs.
+\end{frame}
+
+\begin{frame}{Core Lessons from Chapter 4}
+\begin{enumerate}
+  \item \textbf{Institutions shape outcomes} --- Design matters as much as competition
+  \item \textbf{Diagnose carefully} --- Understand the true source of market failures
+  \item \textbf{Evaluate systematically} --- Use theory and data to compare alternatives
+  \item \textbf{Balance objectives} --- Efficiency and fairness are not always compatible
+  \item \textbf{Design with constraints} --- Account for incentives, computation, and usability
+  \item \textbf{Combine tools} --- Theory and empirics are complementary
+  \item \textbf{Plan for adoption} --- Political economy matters for implementation
+\end{enumerate}
 \end{frame}
 
 \end{document}
